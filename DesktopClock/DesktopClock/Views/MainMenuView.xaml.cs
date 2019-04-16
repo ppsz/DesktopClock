@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace DesktopClock.Views
 {
     /// <summary>
-    /// Interaction logic for DefaultClockFaceView.xaml
+    /// Interaction logic for MainMenuView.xaml
     /// </summary>
-    public partial class DefaultClockFaceView : UserControl
+    public partial class MainMenuView : UserControl
     {
-        public DefaultClockFaceView()
+        public MainMenuView()
         {
             InitializeComponent();
         }
