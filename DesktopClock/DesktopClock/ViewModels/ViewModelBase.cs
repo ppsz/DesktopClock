@@ -11,7 +11,6 @@ namespace DesktopClock.ViewModels
     abstract class ViewModelBase : INotifyPropertyChanged
     {
         #region Fields
-        protected Models.ModelBase _calculationEngine;
         public event PropertyChangedEventHandler PropertyChanged;
         #endregion
 

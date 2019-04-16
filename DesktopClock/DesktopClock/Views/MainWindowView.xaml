@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:DesktopClock"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="7*" />
+        </Grid.ColumnDefinitions>
+
+        <Frame Source="{Binding Menu}"/>
+        <Frame Source="{Binding Face}"/>
     </Grid>
 </Window>
