@@ -72,5 +72,37 @@
                 BorderThickness="0,0,2.5,0" BorderBrush="DarkGoldenrod"/>
         <Border Grid.Column="2" Grid.Row="3" Grid.RowSpan="2"
                 BorderThickness="2.5,0,0,0" BorderBrush="DarkGoldenrod"/>
+
+        <!--Hours and minutes display-->
+        <Viewbox Grid.ColumnSpan="2" Grid.RowSpan="3" Stretch="UniformToFill"
+                 HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Opacity="{Binding BackgroundOpacity}"
+                   Style="{StaticResource DigitalNumbers}"
+                   Content="88:88"/>
+        </Viewbox>
+        <Viewbox Grid.ColumnSpan="2" Grid.RowSpan="3" Stretch="UniformToFill"
+                 HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Style="{StaticResource DigitalNumbers}"
+                   Content="{Binding HoursAndMinutes}"/>
+        </Viewbox>
+
+        <!--Seconds display-->
+        <Viewbox Grid.Column="3" Grid.Row="2">
+            <Label Opacity="{Binding BackgroundOpacity}"
+                   Style="{StaticResource DigitalNumbers}"
+                   Content="88"/>
+        </Viewbox>
+        <Viewbox Grid.Column="3" Grid.Row="2"
+                 VerticalAlignment="Top">
+            <Label Style="{StaticResource DigitalNumbers}"
+                   Content="{Binding Seconds}"/>
+        </Viewbox>
+
+        <!--Date display-->
+        <Viewbox Grid.Row="4" Stretch="UniformToFill"
+                 HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Style="{StaticResource Informations}"
+                Content="{Binding CurrentDate}"/>
+        </Viewbox>
     </Grid>
 </UserControl>
